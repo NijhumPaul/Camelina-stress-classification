@@ -3,3 +3,6 @@ This project proposes a novel lightweight deep learning-based model that integra
 <img width="1073" height="614" alt="image" src="https://github.com/user-attachments/assets/08b3122c-7181-48f6-a563-2b31289cac1d" />
 
 ![classwise](https://github.com/user-attachments/assets/c1087041-9177-4537-b853-6037ebb923ec)
+
+![combined_acc_loss](https://github.com/user-attachments/assets/5a9fd2ef-ea7f-47d1-b18e-eed5fc002398)
+
