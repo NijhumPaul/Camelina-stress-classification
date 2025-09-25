@@ -1,0 +1,7 @@
+
+conda create -n camelina python=3.10.13 -y
+conda activate camelina
+---Go to your project folder--- for example: cd PrecAg/camelina_pred
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+python predict_to_csv.py "C:\path\to\image_folder" "C:\path\to\AIscore.csv"
