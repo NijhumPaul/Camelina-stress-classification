@@ -10,7 +10,7 @@ from tensorflow.keras.applications import DenseNet121
 from tensorflow.keras import layers, Model
 
 # ===== FIX ME if your model path moves =====
-MODEL_PATH = r"custom/custom-20250809-123155-loss-0.11.h5"
+MODEL_PATH = r"custom-20250809-123155-loss-0.11.h5"
 IMAGE_SIZE = (224, 224)
 BATCH_SIZE = 1
 
@@ -126,3 +126,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
