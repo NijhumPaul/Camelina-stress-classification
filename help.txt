@@ -1,7 +1,16 @@
 
+## If you want to use docker to use this application
+# input: images you want to predict will be in a folder "data". 
+# Output: It will be a CSV file saved in "outputs" folder containing the score of each image. 
+docker pull nijhumpaul/camelina-scorer:v1
+mkdir outputs 2>$null
+docker run --rm -it -v "$PWD/data:/app/data" -v "$PWD/outputs:/app/outputs" nijhumpaul/camelina-scorer:v1 /app/data/test2 /app/outputs/AIscore2.csv
+
+## If you want to download the models on you local computer and run using anaconda prompt
 conda create -n camelina python=3.10.13 -y
 conda activate camelina
 ---Go to your project folder--- for example: cd PrecAg/camelina_pred
 python -m pip install --upgrade pip
 pip install -r requirements.txt
+
 python predict_to_csv.py "C:\path\to\image_folder" "C:\path\to\AIscore.csv"
